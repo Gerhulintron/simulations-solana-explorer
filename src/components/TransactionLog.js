@@ -93,8 +93,9 @@ const TransactionLog = ({ publicKey }) => {
     return (
         <div>
             {error && <p style={{ color: 'red' }}>{error}</p>}
+            {isLoading && <div className="spinner"></div>}
             <div>{transactionTable}</div>
-            {lastSignature && (
+            {lastSignature && !isLoading && (
                 <div>
                     <button onClick={loadMoreTransactions} disabled={isLoading}>
                         {isLoading ? 'Loading...' : 'Load More Transactions'}
