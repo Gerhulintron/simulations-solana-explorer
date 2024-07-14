@@ -70,4 +70,4 @@ Explore token accounts associated with any Solana address. Our application lists
 
 ---
 
-We hope you enjoy using the Solana Explorer and find it helpful in your blockchain explorations! Happy exploring! 🌟
+I hope you enjoy using the Solana Explorer and find it helpful in your blockchain explorations! Happy exploring! 🌟
