@@ -1,0 +1,1 @@
+export const SOLANA_ENDPOINT = 'https://distinguished-crimson-resonance.solana-mainnet.quiknode.pro/2018028efcf5287402f6d94d444f397195f2df4a/';

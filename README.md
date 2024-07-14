@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Solana Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Solana Explorer! This project is a user-friendly web application designed to help you explore the Solana blockchain with ease. Whether you're looking to check your account balance, view transaction history, or explore token accounts, our Solana Explorer has got you covered.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🌟 Account Search
 
-### `npm start`
+Easily search for any Solana account by entering the account address. Our search functionality will quickly fetch and display relevant account details, including the account's Solana balance and transaction history.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Transaction History
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+View detailed transaction histories for any Solana account. Our application fetches and displays transactions in an easy-to-read format, providing insights into account activities.
 
-### `npm test`
+### 💰 Balance Display
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the Solana balance of your connected wallet and any searched account. Our balance display component fetches the latest balance information and updates in real-time.
 
-### `npm run build`
+### 🪙 Token Accounts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Explore token accounts associated with any Solana address. Our application lists all the token accounts, providing a comprehensive view of all assets held by the account.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: A JavaScript library for building user interfaces.
+- **React Router**: For handling dynamic routing in the application.
+- **Solana Web3.js**: A library for interacting with the Solana blockchain.
+- **@solana/wallet-adapter-react**: For wallet integration and connecting to the Solana network.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/solana-explorer.git
+    cd solana-explorer
+    ```
 
-## Learn More
+2. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
 
-### Code Splitting
+1. Connect your Solana wallet using the wallet adapter button on the homepage.
+2. Search for any Solana account by entering the account address in the search bar.
+3. View the account details, including the Solana balance, transaction history, and token accounts.
+4. Click on transaction hashes to explore more details. - Coming Soon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgements
 
-### Analyzing the Bundle Size
+- Thanks to the Solana community and the Solana Talent Olympics for their continuous support and contributions.
+- Special thanks to all the open-source projects that make this application possible.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We hope you enjoy using the Solana Explorer and find it helpful in your blockchain explorations! Happy exploring! 🌟
