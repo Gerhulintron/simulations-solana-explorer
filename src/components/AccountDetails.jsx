@@ -4,6 +4,7 @@ import TransactionLog from './TransactionLog';
 import TokenAccounts from './TokenAccounts';
 import SolanaBalanceDisplay from "./SolanaBalanceDisplay";
 import SolanaAccountSearch from "./SolanaAccountSearch";
+import '../assets/styles/SimSolExplorerStyle.css';
 
 const AccountDetails = () => {
     const { publicKey } = useParams();

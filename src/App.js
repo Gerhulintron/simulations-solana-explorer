@@ -5,6 +5,8 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import SolanaAccountSearch from './components/SolanaAccountSearch';
 import AccountDetails from './components/AccountDetails';
 import SolanaBalanceDisplay from "./components/SolanaBalanceDisplay";
+import './assets/styles/SimSolExplorerStyle.css';
+
 
 function App() {
     const { publicKey } = useWallet();
@@ -23,7 +25,7 @@ function App() {
                         </div>
                     )}
                 </header>
-                <h1>Solana Explorer</h1>
+                <h1>Explore Solana</h1>
                 <Routes>
                     <Route path="/" element={<SolanaAccountSearch />} />
                     <Route path="/account/:publicKey" element={<AccountDetails />} />

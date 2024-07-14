@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { SOLANA_ENDPOINT } from '../config';
+import '../assets/styles/SimSolExplorerStyle.css';
 
 const SolanaBalanceDisplay = ({ publicKey }) => {
     const [balance, setBalance] = useState(null);

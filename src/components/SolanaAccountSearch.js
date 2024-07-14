@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { SOLANA_ENDPOINT } from '../config';
+import '../assets/styles/SimSolExplorerStyle.css';
 
 const SolanaAccountSearch = () => {
     const [input, setInput] = useState('');

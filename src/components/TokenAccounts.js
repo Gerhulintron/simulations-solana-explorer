@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Connection, GetProgramAccountsFilter } from '@solana/web3.js';
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import { SOLANA_ENDPOINT } from '../config';
+import '../assets/styles/SimSolExplorerStyle.css';
 
 const TokenAccounts = ({ publicKey }) => {
     const [nftMintAddresses, setNftMintAddresses] = useState([]);

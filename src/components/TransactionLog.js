@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useConnection } from '@solana/wallet-adapter-react';
 import { PublicKey } from '@solana/web3.js';
+import '../assets/styles/SimSolExplorerStyle.css';
 
 const debounce = (func, delay) => {
     let debounceTimer;
