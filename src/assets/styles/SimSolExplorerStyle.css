@@ -103,6 +103,25 @@ a:hover {
 	text-decoration: underline;
 }
 
+thead{
+	background-color: darkgreen;
+	color: white;
+}
+
+table{
+	width: 100%;
+}
+
+tr{
+	justify-content: left;
+	text-align: left;
+	padding: 1%;
+}
+
+td{
+	padding-left: 12px;
+}
+
 /* Card styling */
 .card {
 	background-color: white;

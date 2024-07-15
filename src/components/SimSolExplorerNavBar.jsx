@@ -16,13 +16,14 @@ const SimSolExplorerNavBar = () => {
                 {publicKey && <Link to={`/account/${publicKey.toString()}`}>Account</Link>}
             </nav>
             <div className="navbar-wallet">
-                <WalletMultiButton />
+
                 {publicKey && (
                     <div className="wallet-info">
                         <p><strong>Connected Wallet:</strong> {publicKey.toString()}</p>
                         <SolanaBalanceDisplay publicKey={publicKey.toString()} />
                     </div>
                 )}
+                <WalletMultiButton />
             </div>
         </header>
     );

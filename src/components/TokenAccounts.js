@@ -20,6 +20,7 @@ const TokenAccounts = ({ publicKey }) => {
                 const accounts = await connection.getParsedProgramAccounts(TOKEN_PROGRAM_ID, { filters });
                 const mintAddresses = accounts.map(account => account.account.data.parsed?.info?.mint).filter(Boolean);
                 setNftMintAddresses(mintAddresses);
+                console.log(accounts);
             } catch (error) {
                 console.error('Error fetching token accounts:', error);
             }
