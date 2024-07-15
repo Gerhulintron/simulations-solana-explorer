@@ -2,6 +2,10 @@
 
 Welcome to the Solana Explorer! This project is a user-friendly web application designed to help you explore the Solana blockchain with ease. Whether you're looking to check your account balance, view transaction history, or explore token accounts, our Solana Explorer has got you covered.
 
+See it in action:
+
+explorer.simulacrumimages.com
+
 ## Features
 
 ### 🌟 Account Search
