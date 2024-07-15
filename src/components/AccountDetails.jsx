@@ -1,24 +1,20 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import TransactionLog from './TransactionLog';
-import TokenAccounts from './TokenAccounts';
 import SolanaBalanceDisplay from './SolanaBalanceDisplay';
-import FetchNFTsByPublicKey from './FetchNFTsByPublicKey';
-import SolanaAccountSearch from "./SolanaAccountSearch";
+import TransactionLog from "./TransactionLog";
+import TokenAccounts from "./TokenAccounts";
 
 const AccountDetails = () => {
     const { publicKey } = useParams();
 
     return (
         <div>
-            <SolanaAccountSearch/>
-            <h2>Account Details for {publicKey}</h2>
+            <h1>Account Details</h1>
+            <p>Public Key: {publicKey}</p>
             <SolanaBalanceDisplay publicKey={publicKey} />
+            <Link to={`/stake/${publicKey}`}>View Stake Accounts</Link>
             <TransactionLog publicKey={publicKey} />
             <TokenAccounts publicKey={publicKey} />
-            <div>
-                <Link to="/">Return to Home</Link>
-            </div>
         </div>
     );
 };

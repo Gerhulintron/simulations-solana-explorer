@@ -122,6 +122,20 @@ td{
 	padding-left: 12px;
 }
 
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	background: #f9f9f9;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Card styling */
 .card {
 	background-color: white;
