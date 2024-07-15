@@ -7,6 +7,7 @@ import AccountDetails from './components/AccountDetails';
 import SolanaBalanceDisplay from "./components/SolanaBalanceDisplay";
 import './assets/styles/SimSolExplorerStyle.css';
 import SimSolExplorerNavBar from "./components/SimSolExplorerNavBar";
+import TransactionDetail from "./components/TransactionDetail";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<SolanaAccountSearch />} />
                     <Route path="/account/:publicKey" element={<AccountDetails />} />
+                    <Route path="/tx/:signature" element={<TransactionDetail />} />
                 </Routes>
             </div>
         </Router>

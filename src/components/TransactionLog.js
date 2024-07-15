@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useConnection } from '@solana/wallet-adapter-react';
 import { PublicKey } from '@solana/web3.js';
+import { Link } from 'react-router-dom';
 import '../assets/styles/SimSolExplorerStyle.css';
 
 const debounce = (func, delay) => {
@@ -70,7 +71,7 @@ const TransactionLog = ({ publicKey }) => {
             const date = new Date(transaction.blockTime * 1000).toLocaleDateString();
             return (
                 <tr key={i}>
-                    <td>{transaction.transaction.signatures[0]}</td>
+                    <td><Link to={`/tx/${transaction.transaction.signatures[0]}`}>{transaction.transaction.signatures[0]}</Link></td>
                     <td>{transaction.slot.toLocaleString("en-US")}</td>
                     <td>{date}</td>
                     <td>{transaction.meta.err ? 'Failed' : 'Success'}</td>
