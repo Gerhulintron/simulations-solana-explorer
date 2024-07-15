@@ -4,12 +4,14 @@ import TransactionLog from './TransactionLog';
 import TokenAccounts from './TokenAccounts';
 import SolanaBalanceDisplay from './SolanaBalanceDisplay';
 import FetchNFTsByPublicKey from './FetchNFTsByPublicKey';
+import SolanaAccountSearch from "./SolanaAccountSearch";
 
 const AccountDetails = () => {
     const { publicKey } = useParams();
 
     return (
         <div>
+            <SolanaAccountSearch/>
             <h2>Account Details for {publicKey}</h2>
             <SolanaBalanceDisplay publicKey={publicKey} />
             <TransactionLog publicKey={publicKey} />
