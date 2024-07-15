@@ -52,6 +52,9 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1"
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.4",
+    "react-app-rewired": "^2.2.1",
+    "vm-browserify": "^1.1.2"
   }
 }
