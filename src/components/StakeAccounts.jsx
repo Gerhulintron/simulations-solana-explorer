@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { PublicKey, Connection } from '@solana/web3.js';
+import { useParams } from 'react-router-dom';
 import '../assets/styles/SimSolExplorerStyle.css';
+import { SOLANA_ENDPOINT } from '../config';
 
-const StakeAccounts = ({ publicKey }) => {
+const StakeAccounts = () => {
+    const { publicKey } = useParams();
     const [stakeAccounts, setStakeAccounts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -13,7 +16,7 @@ const StakeAccounts = ({ publicKey }) => {
             setError(null);
 
             try {
-                const connection = new Connection('https://distinguished-crimson-resonance.solana-mainnet.quiknode.pro/2018028efcf5287402f6d94d444f397195f2df4a/');
+                const connection = new Connection(SOLANA_ENDPOINT);
                 const stakeAccounts = await connection.getParsedProgramAccounts(
                     new PublicKey("Stake11111111111111111111111111111111111111"),
                     {
@@ -21,7 +24,7 @@ const StakeAccounts = ({ publicKey }) => {
                             {
                                 memcmp: {
                                     offset: 12,
-                                    bytes: publicKey.toString(),
+                                    bytes: publicKey,
                                 },
                             },
                         ],

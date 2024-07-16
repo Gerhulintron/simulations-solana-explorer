@@ -37,7 +37,7 @@ const TokenAccounts = ({ publicKey }) => {
             {isLoading ? <p>Loading...</p> : (
                 nftMintAddresses.length > 0 ? (
                     <div>
-                        <h3>NFT Mint Addresses</h3>
+                        <h3>Token</h3>
                         <pre>{JSON.stringify(nftMintAddresses, null, 2)}</pre>
                     </div>
                 ) : (

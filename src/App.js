@@ -23,7 +23,7 @@ function App() {
                     <Route path="/" element={<SolanaAccountSearch />} />
                     <Route path="/account/:publicKey" element={<AccountDetails />} />
                     <Route path="/tx/:signature" element={<TransactionDetail />} />
-                    <Route path="/stake/:publicKey" element={<StakeAccounts publicKey={publicKey} />} />
+                    <Route path="/stake/:publicKey" element={<StakeAccounts />} />
 
                 </Routes>
             </div>
