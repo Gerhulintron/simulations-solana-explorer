@@ -7,12 +7,13 @@ body, h1, h2, h3, p, ul, li, a, input, button {
 
 /* Body styling */
 body {
+	margin-top: 5%;
 	background-color: #f4f4f4;
 	color: #333;
 	font-size: 16px;
 	line-height: 1.6;
 	padding: 5%;
-	padding-top: 100px; /* Adjust top padding to accommodate the fixed navbar */
+	padding-top: var(--navbar-height); /* Adjust top padding to accommodate the fixed navbar */
 }
 
 /* Container styling */
@@ -35,7 +36,7 @@ body {
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	height: 70px; /* Set a fixed height for the navbar */
+	height: var(--navbar-height); /* Set a fixed height for the navbar */
 }
 
 .navbar-title {
@@ -103,25 +104,24 @@ a:hover {
 	text-decoration: underline;
 }
 
-thead{
+thead {
 	background-color: darkgreen;
 	color: white;
 }
 
-table{
+table {
 	width: 100%;
 }
 
-tr{
+tr {
 	justify-content: left;
 	text-align: left;
 	padding: 1%;
 }
 
-td{
+td {
 	padding-left: 12px;
 }
-
 
 ul {
 	list-style-type: none;
@@ -157,7 +157,6 @@ li {
 	text-align: center;
 }
 
-
 .spinner {
 	border: 4px solid rgba(0, 0, 0, 0.1);
 	width: 36px;
@@ -168,8 +167,105 @@ li {
 	margin: auto;
 }
 
+.data-container {
+	display: grid;
+}
+
 @keyframes spin {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+	body {
+		font-size: 15px;
+		padding-top: var(--navbar-height);
+		margin-top: 10%;
+	}
+	.navbar-title {
+		font-size: 1.3rem;
+	}
+	.navbar-links a {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 992px) {
+	body {
+		font-size: 14px;
+		padding-top: var(--navbar-height);
+		margin-top: 10%;
+	}
+	.navbar {
+		flex-direction: column;
+		height: auto;
+		padding: 10px;
+	}
+	.navbar-links {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.wallet-info {
+		margin-left: 0;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 13px;
+		padding: 10px;
+		padding-top: var(--navbar-height);
+		margin-top: 10%;
+	}
+	.container {
+		width: 90%;
+		padding: 10px;
+	}
+	.navbar-title {
+		font-size: 1.2rem;
+	}
+	.navbar-links {
+		gap: 5px;
+	}
+}
+
+@media (max-width: 576px) {
+	body {
+		font-size: 12px;
+		padding-top: var(--navbar-height);
+		margin-top: 15%;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-title {
+		font-size: 1rem;
+	}
+	.navbar-links {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links a {
+		font-size: 0.8rem;
+		padding: 5px 0;
+	}
+	button {
+		padding: 8px 16px;
+		font-size: 0.9rem;
+	}
+	input[type="text"] {
+		font-size: 0.9rem;
+		padding: 8px;
+	}
+}
+
+/* CSS Variable for navbar height */
+:root {
+	--navbar-height: 100px; /* Default navbar height */
 }

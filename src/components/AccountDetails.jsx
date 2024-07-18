@@ -8,7 +8,7 @@ const AccountDetails = () => {
     const { publicKey } = useParams();
 
     return (
-        <div>
+        <div className="data-container" id="account-detail-container">
             <h1>Account Details</h1>
             <p>Public Key: {publicKey}</p>
             <SolanaBalanceDisplay publicKey={publicKey} />

@@ -31,7 +31,7 @@ const SolanaAccountSearch = () => {
     };
 
     return (
-        <div>
+        <div id="search-container">
             <input
                 type="text"
                 value={input}

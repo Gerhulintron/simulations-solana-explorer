@@ -45,7 +45,7 @@ const StakeAccounts = () => {
     }, [publicKey]);
 
     return (
-        <div>
+        <div className="data-container" id="stake-account-container">
             <h1>Stake Accounts</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {isLoading ? <div className="spinner"></div> : (

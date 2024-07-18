@@ -33,7 +33,7 @@ const TokenAccounts = ({ publicKey }) => {
     }, [publicKey]);
 
     return (
-        <div>
+        <div className="token-data-container">
             {isLoading ? <p>Loading...</p> : (
                 nftMintAddresses.length > 0 ? (
                     <div>

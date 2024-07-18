@@ -92,7 +92,7 @@ const TransactionLog = ({ publicKey }) => {
     };
 
     return (
-        <div>
+        <div id="transactions-container" className="data-container">
             <h1>Transactions</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {isLoading && <div className="spinner"></div>}

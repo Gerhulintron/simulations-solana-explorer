@@ -29,7 +29,7 @@ const TransactionDetail = () => {
     }, [signature, connection]);
 
     return (
-        <div>
+        <div id="transaction-detail-container" className="data-container">
             <SolanaAccountSearch/>
             <h1>Transaction Detail</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
