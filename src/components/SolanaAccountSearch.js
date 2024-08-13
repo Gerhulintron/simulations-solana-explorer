@@ -32,6 +32,7 @@ const SolanaAccountSearch = () => {
 
     return (
         <div id="search-container">
+            <h3>Enter a wallet account or transaction id from the Solana blockchain.</h3>
             <input
                 type="text"
                 value={input}
